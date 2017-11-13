@@ -1,0 +1,1 @@
+A simple nodejs app to test REST and JWT
