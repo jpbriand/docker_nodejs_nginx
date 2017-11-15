@@ -1,0 +1,6 @@
+{
+  "apps": [{
+    "name": "TestPm2",
+    "script": "app.js"
+  }]
+}

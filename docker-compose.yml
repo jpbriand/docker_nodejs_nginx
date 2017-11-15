@@ -1,0 +1,10 @@
+version: '3'
+services:
+  servernode:
+    build: ./server
+    ports:
+     - "8081:3000"
+  nginxproxy:
+    build: ./nginx
+    ports:
+     - "8080:80"

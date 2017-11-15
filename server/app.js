@@ -4,6 +4,8 @@ var express = require('express');
 var app = express();
 var bodyParser = require("body-parser");
 
+var log = require('./helpers/log');
+
 //var db = require('./db');
 global.__root = __dirname + '/';
 
@@ -19,6 +21,7 @@ app.use(function (req, res, next) {
 
 
 app.get('/api', function (req, res) {
+	log.info('rest : /api');
   res.status(200).send('API works.');
 });
 
